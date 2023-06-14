@@ -12,6 +12,7 @@ client.setConfig({
 
 const app = express();
 const port = process.env.PORT;
+const audienceId = process.env.AUDIENCEID;
 
 // Express app setup
 app.use(express.static("public"));
@@ -27,7 +28,7 @@ app.post("/", function(req, res){
     const email = req.body.email;
 
     const run = async () => {
-        const response = await client.lists.addListMember("a2306b861c", {
+        const response = await client.lists.addListMember(audienceId, {
           email_address: email,
           status: "subscribed",
           merge_fields: {
