@@ -37,6 +37,7 @@
 
     .form-signin label {
       color: #fff;
+      margin-bottom: 5px; /* Added margin-bottom to the labels */
     }
 
     .form-signin .checkbox label {
@@ -47,6 +48,7 @@
     .form-signin .btn-primary {
       background-color: #007bff;
       border-color: #007bff;
+      margin-bottom: 10px; /* Added margin-bottom to the sign-up button */
     }
 
     .form-signin .btn-primary:hover {
@@ -61,6 +63,10 @@
     .form-signin .rounded-circle {
       border-radius: 50%;
     }
+
+    .form-signin p {
+      margin-top: 10px; /* Added margin-top to the Made by BreadWorshipper text */
+    }
   </style>
 
   <title>Signin Template · Bootstrap v5.3</title>
@@ -71,7 +77,7 @@
   <main class="form-signin">
     <form action="/" method="post">
       <img class="mb-4 rounded-circle" src="images/bread.png" alt="" width="72" height="72">
-      <h1 class="h3 mb-3 fw-normal">Sign Up</h1>
+      <h1 class="h3 mb-3 fw-normal">Sign Up To BreadLetter</h1>
 
       <div class="form-floating">
         <input type="text" class="form-control" id="floatingFirstName" placeholder="First Name" name="firstName">
@@ -85,10 +91,9 @@
         <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com" name="email">
         <label for="floatingEmail">Email Address</label>
       </div>
-      
+
       <button class="w-100 btn btn-lg btn-primary" type="submit">Sign Up</button>
-      <p class="mt-5 mb-3 text-muted">&copy; 2023</p>
-      <p>Made by <a href="https://github.com/breadworshipper" target="_blank">breadworshipper</a></p>
+      <p style="margin-top: 10px;">Made by <a href="https://github.com/breadworshipper" target="_blank">breadworshipper</a></p>
     </form>
   </main>
 

@@ -11,6 +11,7 @@ client.setConfig({
   });
 
 const app = express();
+const port = process.env.PORT;
 
 // Express app setup
 app.use(express.static("public"));
@@ -40,6 +41,6 @@ app.post("/", function(req, res){
       run();      
 });
 
-app.listen(3030, function(){
+app.listen(port, function(){
     console.log("Server started at port 3030");
 });
