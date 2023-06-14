@@ -43,6 +43,3 @@ app.post("/", function(req, res){
 app.listen(3030, function(){
     console.log("Server started at port 3030");
 });
-
-// api key : b3c1bac95ad95ea65816883c6d55bddf-us21
-// audience id : a2306b861c
