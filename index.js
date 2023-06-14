@@ -22,7 +22,7 @@ app.get("/", function(req, res){
     res.sendFile(__dirname + "/public/signup.html");
 });
 
-app.post("/post", function(req, res){
+app.post("/", function(req, res){
     const firstName = req.body.firstName;
     const lastName = req.body.lastName;
     const email = req.body.email;
