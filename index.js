@@ -12,13 +12,14 @@ client.setConfig({
 
 const app = express();
 const port = process.env.PORT;
-const audienceId = process.env.AUDIENCEID;
+const audienceId = process.env.AUDIENCE_ID;
 
 // Express app setup
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.get("/", function(req, res){
+    console.log(audienceId);
     res.sendFile(__dirname + "/public/signup.html");
 });
 
