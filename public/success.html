@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://getbootstrap.com/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      padding: 20px;
+      background-color: #121212;
+      color: #fff;
+    }
+
+    .jumbotron {
+      background-color: transparent;
+      color: #fff;
+      border: none;
+      box-shadow: none;
+    }
+
+    .jumbotron h1,
+    .jumbotron p,
+    .jumbotron a {
+      color: #fff;
+    }
+
+    .jumbotron a:hover {
+      color: #f8f9fa;
+    }
+
+    .jumbotron::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+      z-index: -1;
+    }
+  </style>
+
+  <title>Jumbotron Example (Dark Mode)</title>
+</head>
+
+<body>
+
+  <div class="jumbotron">
+    <h1 class="display-4">Yay!</h1>
+    <p class="lead">You are successfully signed up.</p>
+    <hr class="my-4">
+    <a class="btn btn-primary btn-lg" href="/" role="button">Go back</a>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://getbootstrap.com/docs/5.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

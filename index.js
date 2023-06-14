@@ -19,10 +19,10 @@ app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.get("/", function(req, res){
-    res.sendFile(__dirname + "/signup.html");
+    res.sendFile(__dirname + "/public/signup.html");
 });
 
-app.post("/", function(req, res){
+app.post("/post", function(req, res){
     const firstName = req.body.firstName;
     const lastName = req.body.lastName;
     const email = req.body.email;
@@ -37,8 +37,15 @@ app.post("/", function(req, res){
           }
         });
         console.log(response);
-      };
-      
+
+        if (response.statusCode === 200){
+            res.sendFile(__dirname + "/public/success.html");
+          }
+          else {
+            res.sendFile(__dirname + "/public/failure.html");
+          }
+      };  
+
       run();      
 });
 
